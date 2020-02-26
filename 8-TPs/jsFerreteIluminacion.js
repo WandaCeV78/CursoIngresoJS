@@ -24,13 +24,38 @@ function CalcularPrecio ()
     
     document.getElementById("precioDescuento").value = lista;
 
-}
-    /*if (marca == "ArgentinaLuz" && cant >= 5)
-    {
-        //document.getElementById("precioDescuento").value = lista;
-        alert (document.getElementById("precioDescuento")) = lista;
-    }
+    //A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
 
+    if (cant >= 6)
+    {
+        document.getElementById("precioDescuento").value = lista * .50;
+
+              }
+              
+
+
+              //Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" 
+              //se hace un descuento del 40 % y si es de otra marca el descuento es del 30%.  
+
+
+    if (marca == "ArgentinaLuz" && cant >= 5)
+    {
+        document.getElementById("precioDescuento").value = lista * 0.60;
+ 
+    }
+    else 
+    {
+        (document.getElementById("precioDescuento").value) = lista * 0.70;
+        
+
+    }
+    //consultar parsefloat
+
+    /*Si compra 4  lamparitas bajo consumo marca "ArgentinaLuz" o “FelipeLamparas” se hace un descuento del 25 % 
+    y si es de otra marca el descuento es del 20%.*/
+
+
+    if ( marca == "ArgentinaLuz" )
 
 }
   
@@ -52,8 +77,9 @@ function CalcularPrecio ()
     /*if (cant = 5)
     {
         document.getElementById("precioDescuento") = desc1;
-    }
+    }/*
 
 
  	
-}
+*/
+
