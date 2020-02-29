@@ -1,0 +1,63 @@
+var nombre;
+var cantidad;
+var dias;
+var formapago;
+var seguir;
+var masdias = 0;
+var mascantidaddias = 0;
+var huespedmas = 0 ;
+var contadorpersonas = 0;
+var contadorfp= 0;
+var promedio;
+var contadorreserva= 0;
+var acumuladordias= 0;
+
+do
+{
+    nombre = prompt("Ingrese su nombre");
+    while (isNaN (nombre));{
+       nombre = prompt("No esta ingresando un nombre, ingrese uno");
+
+    }
+
+    cantidad = parseInt(prompt("Ingrese cantidad personas));
+    while (cantidad <0 || isNaN(cantidd));{
+      cantidad = parseInt(prompt("NO es una cantidad valida, ingrese cantidad));
+    }
+    
+    dias = parseInt(prompt("Ingrese cantidad dias));
+    while (dias <0 || isNaN(dias));{
+       dias = parseInt(prompt("No es cantidad valida de dias, ingrese un valor correcto));
+    }
+
+    formapago = prompt (" Ingrese forma de pago : Efectivo (E), Tarjeta (T) o QR (QR)");
+    while (!(formapago == "E" && formapago == "T" && formapago== "QR"  );{
+        formapago = prompt ("La forma de pago no es la esperada, ingrese nuevamente:);
+    }
+ 
+
+
+if (cantidad == 0 || cantidad > mascantpersonas  )
+           mascantpersonas = cantidad;
+           huespedmas = huesped;
+
+
+
+ if( dias > masdias)
+     masdias = dias;
+     mascantidaddias = cantidad;           
+
+
+ 
+ contadorfp = formapago++
+ contadorreserva = nombre++;
+ acumuladordias = dias++:
+
+
+ promedio = acumuladordias / contadorreserva;
+        
+
+       
+seguir= prompt ("Desea seguir ingresando?: ");
+}
+ while (seguir = "S");
